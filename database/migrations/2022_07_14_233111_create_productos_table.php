@@ -18,8 +18,8 @@ class CreateProductosTable extends Migration
             $table->string('nombre');
             $table->foreignId('id_categoria')
                     ->constrained('categorias')
-                    ->onUpdate('cascade')
-                    ->onDelete('cascade');
+                    ->cascadeOnUpdate()
+                    ->cascadeOnDelete();
             $table->integer('precio');
         });
     }
