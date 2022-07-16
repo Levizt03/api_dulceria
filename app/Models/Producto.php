@@ -18,4 +18,11 @@ class Producto extends Model
     public function tickets(){
         return $this->belongsTo(Ticket::class,'id');
     }
+
+    protected $fillable = [
+        'nombre',
+        'id_categoria',
+        'precio'
+    ];
+    public $timestamps = false;
 }

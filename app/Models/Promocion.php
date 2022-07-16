@@ -14,4 +14,12 @@ class Promocion extends Model
     public function tickets(){
         return $this->belongsTo(Ticket::class,'id');
     }
+
+    protected $fillable = [
+        'id_producto',
+        'nombre',
+        'descripcion',
+        'descuento'
+    ];
+    public $timestamps = false;
 }
