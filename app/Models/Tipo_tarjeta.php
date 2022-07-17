@@ -11,4 +11,9 @@ class Tipo_tarjeta extends Model
     public function tarjetas(){
         return $this->hasMany(Tarjeta::class, 'id');
     }
+
+    protected $fillable = [
+        'nombre',
+    ];
+    public $timestamps = false;
 }

@@ -19,6 +19,7 @@ class CreateTarjetasTable extends Migration
                 ->constrained('tipo_tarjetas')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
+            $table->integer('numero');
         });
     }
 

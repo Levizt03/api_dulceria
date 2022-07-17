@@ -11,4 +11,11 @@ class Empleado extends Model
     public function tickets(){
         return $this->hasMany(Ticket::class,'id');
     }
+
+    protected $fillable = [
+        'nombre',
+        'apellido',
+        'dni',
+    ];
+    public $timestamps = false;
 }

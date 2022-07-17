@@ -14,4 +14,15 @@ class Cliente extends Model
     public function tarjetas(){
         return $this->hasOne(Tarjeta::class,'id_tarjeta');
     }
+
+    protected $fillable = [
+        'nombre',
+        'apellido',
+        'dni',
+        'id_tarjeta',
+        'correo',
+        'telefono',
+        'afiliacion'
+    ];
+    public $timestamps = false;
 }

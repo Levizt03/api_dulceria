@@ -11,4 +11,10 @@ class Tarjeta extends Model
     public function tipo_tarjetas(){
         return $this->belongsTo(Tipo_tarjeta::class,'id_tipo');
     }
+
+    protected $fillable = [
+        'id_tipo',
+        'numero'
+    ];
+    public $timestamps = false;
 }
