@@ -20,4 +20,18 @@ class Ticket extends Model
     public function promocions(){
         return $this->hasMany(Promocion::class,'id_promocion');
     }
+
+    protected $fillable = [
+        'id_empleados',
+        'id_cliente',
+        'id_producto',
+        'id_promocion',
+        'total',
+        'fecha',
+        'pelicula',
+        'sala',
+        'butaca'
+    ];
+
+    public $timestamps = false;
 }

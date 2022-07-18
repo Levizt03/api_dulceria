@@ -61,3 +61,9 @@ Route::get('/Categoria', 'App\Http\Controllers\CategoriaController@index');
 Route::post('/Crear-categoria', 'App\Http\Controllers\CategoriaController@crear');
 Route::put('/Actualizar-categoria/{id}', 'App\Http\Controllers\CategoriaController@actualizar');
 Route::delete('/Borrar-categoria/{id}', 'App\Http\Controllers\CategoriaController@borrar');
+
+//Ruta ticket(simple)
+Route::get('/Ticket', 'App\Http\Controllers\TicketController@index');
+Route::post('/Crear-ticket', 'App\Http\Controllers\TicketController@crear');
+Route::put('/Actualizar-ticket/{id}', 'App\Http\Controllers\TicketController@actualizar');
+Route::delete('/Borrar-ticket/{id}', 'App\Http\Controllers\TicketController@borrar');
